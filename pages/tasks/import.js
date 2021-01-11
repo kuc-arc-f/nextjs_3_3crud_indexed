@@ -5,8 +5,6 @@ import Dexie from 'dexie';
 import LibTask from '../../libs/LibTask';
 
 import Layout from '../../components/layout'
-import Header from '../Layout/AppHead';
-import IndexRow from './IndexRow';
 //
 export default class extends Component {
   constructor(props){

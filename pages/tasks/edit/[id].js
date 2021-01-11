@@ -4,7 +4,7 @@ import React from 'react'
 import Dexie from 'dexie';
 
 import LibTask from '../../../libs/LibTask';
-import Header from '../../Layout/AppHead';
+import Layout from '../../../components/layout'
 //
 export default class extends React.Component {
   constructor(props){
@@ -76,8 +76,7 @@ console.log(ctx.query.id)
   }  
   render() {
     return (
-      <div>
-          <Header />
+      <Layout>
           <div className="container">
             <hr className="mt-2 mb-2" />
             <h1>Tasks - Edit</h1>
@@ -114,7 +113,7 @@ console.log(ctx.query.id)
             <hr />
             ID : {this.props.id}
           </div>
-      </div>
+      </Layout>
     );
   };
 }

@@ -4,8 +4,8 @@ import React, {Component} from 'react';
 import Dexie from 'dexie';
 import LibTask from '../../libs/LibTask';
 
-import Header from '../Layout/AppHead';
-import IndexRow from './IndexRow';
+//import Header from '../Layout/AppHead';
+import Layout from '../../components/layout'
 //
 export default class extends Component {
   constructor(props){
@@ -45,8 +45,7 @@ export default class extends Component {
   } 
   render() {
     return (
-      <div>
-        <Header />
+      <Layout>
         <div className="container">
           <hr className="mt-2 mb-2" />
           <h1>Tasks - Create</h1>
@@ -74,7 +73,7 @@ export default class extends Component {
           </div>                
           <hr />
         </div>
-      </div>
+      </Layout>
     )    
   } 
 }

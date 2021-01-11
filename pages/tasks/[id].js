@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
 import Dexie from 'dexie';
-import LibTask from '../../libs/LibTask';
 
-import Header from '../Layout/AppHead';
+import LibTask from '../../libs/LibTask';
+import Layout from '../../components/layout'
 //
 export default class extends React.Component {
   constructor(props){
@@ -39,15 +39,14 @@ console.log(this.id )
   }  
   render() {
     return (
-    <div>
-      <Header />
+    <Layout>
       <div className="container">
         <div><h1>{this.state.title}</h1>
         </div>  
         <div>Content: {this.state.content}
         </div>              
       </div>
-    </div>
+    </Layout>
     )
   }
 }
